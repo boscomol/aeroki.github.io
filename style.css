@@ -1,0 +1,296 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+
+
+/* ===================================== */
+
+
+.navbar {
+	z-index: 99999;
+}
+
+.menu{
+	position:relative;
+	z-index:9999;
+}
+
+.my-navbar{
+	width:100%;
+	padding:20px 20px;
+	background-color: rgb(7, 0, 7);
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:999;
+	border-bottom: 5px solid rgb(224, 0, 0);
+}
+
+.navbar-nav a{
+	font-size:15px;
+	text-transform:uppercase;
+	margin:0px 10px;
+	position:relative;
+	color: rgb(224, 0, 0);
+}
+
+.navbar-nav a:hover{
+	background-color: rgb(224, 0, 0);
+	transition: 0.3s;
+	color: rgb(7, 0, 7);
+}
+
+.navbar-brand a{
+	font-size: 25px;
+	color: rgb(224, 0, 0);
+	transition: 0.3s;
+}
+
+.navbar-brand a:hover {
+	letter-spacing: 5px;
+	transition: 0.3s;
+	color: rgb(224, 0, 0);
+	text-decoration: none;
+}
+
+.navbar-scroll{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color: rgb(7, 0, 7);
+	padding: 0px 20px;
+	transition:0.5s;
+	animation:scroll 0.6s 1;
+}
+
+@keyframes scroll{
+	0%{transform:translateY(-100%);}
+	100%{transform:translateY(0%);}
+}
+
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: rgb(7, 0, 7);
+    border:none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: rgb(224, 0, 0);
+    margin-bottom: 5px;
+}
+
+
+/* ===================================== */
+
+
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: rgb(224, 0, 0); /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 30px 30px 0 0; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+	transition: 0.5s;
+  	background-color: rgb(7, 0, 7); /* Add a dark-grey background on hover */
+}
+
+
+/* ===================================== */
+
+
+.jumbotron-review {
+	margin-top: 100px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img.jpg');
+	background-size: cover;
+	align-items: center;
+	display: flex;
+}
+
+.jumbotron-text {
+	color: #fff;
+	margin: auto;
+	position: relative;
+}
+
+
+/* ===================================== */
+
+
+section {
+	margin-top: 100vh;
+}
+
+.features {
+	padding-top: 70px;
+}
+
+.features .card {
+	border: none;
+}
+
+.features .card .card-body {
+	/*background-color: rgb(7, 0, 7);*/
+	color: rgb(224, 0, 0);
+	border-radius: 0;
+	padding: 20px;
+	height: 150px;
+}
+
+.features .card .card-title {
+	font-weight: bold;
+}
+
+#about {
+	padding-top: 100px;
+}
+
+.about-us {
+}
+
+.about-us p {
+	text-align: justify;
+}
+
+.about-us span {
+	font-weight: bold;
+}
+
+.address {
+	padding-top: 70px;
+}
+
+#contact {
+	padding-bottom: 70px;
+	padding-top: 100px;
+}
+
+.contact {
+}
+
+.contact i {
+	text-align: center;
+	width: 30px;
+	margin-right: 40px;
+	font-size: 20px;
+}
+
+.contact a {
+	color: #000;
+}
+
+.how-makes {
+	padding-bottom: 70px;
+}
+
+
+
+
+
+
+/* ===================================== */
+
+
+footer {
+	width: 100%;
+	background-color: #fafafa;
+	color: #6c757d;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.social-link {
+	padding: 20px 0;
+}
+
+.social-link .social-icon {
+	background-color: rgb(224, 0, 0);
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	line-height: 50px;
+}
+
+.social-link .social-icon:hover {
+	background-color: rgb(7, 0, 7);
+	transition: 0.5s;
+}
+
+.social-link .social-icon i {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+/* ===================================== */
+
+
+/* Responsive Timee!!! */
+
+
+@media screen and (max-width: 992px) {
+
+	.navbar-nav {
+		margin-top: 50px;
+	}
+
+	.navbar-nav a {
+		margin-left: 0;
+	}
+
+	.navbar-nav a:hover{
+		background-color: unset;
+		transition: 0.3s;
+		color: #fff;
+		margin-left: unset;
+	}
+
+	.about-us-text {
+		margin-top: 20px;
+	}
+
+	.features .card {
+		border: none;
+		border-radius: 0;
+	}
+
+	.features .card .card-body {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	.address img {
+		height: 100%;
+	}
+
+
+}
